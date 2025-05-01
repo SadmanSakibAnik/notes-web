@@ -1,0 +1,9 @@
+<%- include('../partials/header') %>
+<div class="max-w-xl mx-auto mt-6 bg-white p-6 rounded shadow">
+  <h1 class="text-xl mb-4 font-bold">Create New Note</h1>
+  <form action="/notes/new" method="POST">
+    <input type="text" name="title" placeholder="Title" class="w-full border p-2 mb-3" required>
+    <textarea name="content" placeholder="Content" class="w-full border p-2 mb-3" rows="5" required></textarea>
+    <button class="bg-green-500 text-white px-4 py-2 rounded">Save Note</button>
+  </form>
+</div>
